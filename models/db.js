@@ -7,7 +7,9 @@ var SALT_WORK_FACTOR = 10;
 //var dbURI = 'mongodb://127.0.0.1/test';
 
 
-var dbURI = 'mongodb://edu:edu@ds015879.mlab.com:15879/edurekadb';
+//var dbURI = 'mongodb://edu:edu@ds015879.mlab.com:15879/edurekadb';
+
+var dbURI = 'mongodb://amitupadhyaydb:amit1234@ds053156.mlab.com:53156/mystudyportal';
 
 
 mongoose.connect(dbURI);
