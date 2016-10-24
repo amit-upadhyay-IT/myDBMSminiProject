@@ -1,3 +1,5 @@
+// One important thing in this application is that like DAO design pattern we are trying to keep all data access code in one single file.
+
 // There is a library 'mongoose' in node.js which is used to access mongodb in node.js
 
 var chalk = require('chalk');
