@@ -1,3 +1,5 @@
+// There is a library 'mongoose' in node.js which is used to access mongodb in node.js
+
 var chalk = require('chalk');
 var mongoose = require( 'mongoose' );
 var bcrypt=require('bcrypt');
@@ -26,7 +28,7 @@ mongoose.connection.on('disconnected', function () {
 });
 
 
-
+// while using Mongoose we can create schema for proper management of database
 var userSchema = new mongoose.Schema({
   username: {type: String, unique:true},
   email: {type: String, unique:true},
