@@ -75,7 +75,13 @@ userSchema.methods.comparePassword = function(candidatePassword, cb) {
 
 
 // Build the User model
+
+// here in model we are providing two arguments and we are now going to create a model on the basis of the schema,
 mongoose.model( 'User', userSchema );
+// when we say mongoose.model then at that time we are compiling our schema now some kind of logical collection will be created
+// and that logical table will be known as a model and the name of that model is 'User'
+// Again we are simply mapping all the data inside userSchema to the 'User' collection. The name of the model(collection) is 'User'
+
 
 // Stories Schema
 
