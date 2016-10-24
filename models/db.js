@@ -32,6 +32,9 @@ mongoose.connection.on('disconnected', function () {
 // how database is constructed.
 
 // The feature of mongoose is that it allows us to store data in fixed schema format.
+
+// In RDBMS we specify the structure of table while using create structure, similarly in this schema we are not actually creating
+// any collection rather we are just defining a logical structure which will be applied agains our collection.
 var userSchema = new mongoose.Schema({
   username: {type: String, unique:true},
   email: {type: String, unique:true},
