@@ -44,6 +44,7 @@ var userSchema = new mongoose.Schema({
   email: {type: String, unique:true},
   password: String
 });
+// upto this point nothing gets done, this schema is not related to the collecion on database.
 
 
 userSchema.pre('save', function(next) {
