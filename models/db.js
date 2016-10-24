@@ -1,5 +1,7 @@
 // One important thing in this application is that like DAO design pattern we are trying to keep all data access code in one single file.
 
+// mongodb is very flexible we don't even need to think that if on the database the collection exists or not.
+
 // There is a library 'mongoose' in node.js which is used to access mongodb in node.js
 
 var chalk = require('chalk');
@@ -16,7 +18,7 @@ var dbURI = 'mongodb://amitupadhyaydb:amit1234@ds053156.mlab.com:53156/mystudypo
 
 mongoose.connect(dbURI);
 
-
+// when the collection will be established the below evens will be raised.
 mongoose.connection.on('connected', function () {
   console.log(chalk.yellow('Mongoose connected to ' + dbURI));
 });
