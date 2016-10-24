@@ -28,7 +28,10 @@ mongoose.connection.on('disconnected', function () {
 });
 
 
-// while using Mongoose we can create schema for proper management of database
+// while using Mongoose we can create schema for proper management of database, the schema is the blueprint of
+// how database is constructed.
+
+// The feature of mongoose is that it allows us to store data in fixed schema format.
 var userSchema = new mongoose.Schema({
   username: {type: String, unique:true},
   email: {type: String, unique:true},
